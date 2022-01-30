@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/fonts.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js" integrity="sha512-5efjkDjhldlK+BrHauVYJpbjKrtNemLZksZWxd6Wdxvm06dceqWGLLNjZywOkvW7BF032ktHRMUOarbK9d60bg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src='https://dfrnc.com/lib/morph3.min.js'></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/MotionPathPlugin.min.js"></script>
+<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		 <header class="header">
+    <div class="header__logo">
+      <img src="img/header/enso_logo.png" alt="enso_logo">
+    </div>
+    <div class="header-nav">
+      <ul>
+        <li><a class="header-nav__point" href="#">About</a></li>
+        <li><a class="header-nav__point" href="blog.html">Blog</a></li>
+        <li><a class="header-nav__point" href="#">Contact</a></li>
+        <li><a class="header-nav__button" href="#">Learn More</a></li>
+      </ul>
+    </div>
+		<div class="header-menu">
+			<li class="mobile-menu" onclick="openNav()">☰</li>
+		</div>
+		<div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Learning Center</a>
+        <a href="#">Contact</a>
+        <button>Learn More</button>
+    </div>
+  </header>
+  <!-- /header -->
+  <section class="blog">
+    <div class="container">
+      <h2 class="blog__title"><span>Enso Blog</span></h2>
+      <p class="blog__text">Learn what’s next for <span>Enso, eCommerce</span> and <span>Aggregation</span></p>
+      <div class="blog-container">
+        <div class="blog-post">
+          <div class="blog-post-content">
+            <div class="blog-post-content__name"> 
+              <img src="img/blog/avatar.png" alt="avatar"> 
+              <p>Shankar Narayan <span>in</span> GEN</p> 
+            </div>
+            <h2 class="blog-post-content__title">Capitalism is Dead, and Every Billionaire Knows It</h2>
+            <p class="blog-post-content__text">They have all moved on. It’s time for us to do the same</p>
+            <div class="blog-post-content-bot">
+              <p class="blog-post-content-bot__date">Jan 4  -  6 min read  - </p>
+              <a href="#" class="blog-post-content-bot__button">Politics</a>
+            </div>
+          </div>
+          <div class="blog-post__img">
+            <img src="img/blog/post_img.png" alt="post_img">
+          </div>
+        </div>
+        <div class="blog-form">
+          <div class="blog-form-container">
+            <h2 class="blog-form__title">How To Make Millions Selling</h2>
+            <p class="blog-form__text">It’s not what you’re selling, it’s about sex, drugs, and ...</p>
+            <div class="blog-form-block">
+              <div class="blog-form-block-inputs">
+                <input class="blog-form-block__name" type="text" placeholder="Enter name">
+                <input class="blog-form-block__email" type="text" placeholder="Enter email address">
+              </div>
+              <a class="blog-form-block__button" href="#">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /blog -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-left">
+					<ul>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Term & Conditions</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+					</ul>
+				</div>
+				<div class="footer-right">
+					<div class="footer__text">
+						Copyright &copy; 2022 Enso Brands
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+  <!-- /.footer -->
+	</div>
+  <script src="js/index.js"></script>
+</body>
+</html>
