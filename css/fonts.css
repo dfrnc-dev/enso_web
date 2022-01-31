@@ -1,12 +1,29 @@
 @font-face {
 font-family: 'ProximaNova';
-src: url('../fonts/ProximaNova-Regular.ttf');
+src: url('../fonts/ProximaNova-Regular.eot');
+src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/ProximaNova-Regular.woff') format('woff'),
+url('../fonts/ProximaNova-Regular.ttf') format('truetype');
 }
 
 @font-face {
 font-family: 'ProximaNova-Bold';
-src: url('../fonts/ProximaNova-Bold.ttf');
+src: url('../fonts/ProximaNova-Bold.eot');
+src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/ProximaNova-Bold.woff') format('woff'),
+url('../fonts/ProximaNova-Bold.ttf') format('truetype');
 }
+
+@font-face {
+font-family: 'LibreBaskerville';
+src: url('../fonts/LibreBaskerville-Regular.ttf');
+}
+
+@font-face {
+font-family: 'LibreBaskerville-Bold';
+src: url('../fonts/LibreBaskerville-Bold.ttf');
+}
+
 
 
 

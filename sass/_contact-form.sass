@@ -1,0 +1,43 @@
+@import 'variables'
+
+.contact-form
+  &-container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 200px
+  &-block
+    display: flex
+    flex-direction: column
+    width: 40%
+    &__title
+      font-family: LibreBaskerville
+      font-weight: bold
+      font-size: 40px
+      letter-spacing: 0.02em
+      color: $white
+      margin-bottom: 25px
+    &__name, &__email, &__textarea
+      font-family: ProximaNova
+      font-weight: normal
+      font-size: 22px
+      padding: 10px 10px
+      margin-bottom: 10px
+      border: none
+      border-radius: 2px
+    &__button
+      font-family: ProximaNova
+      font-weight: normal
+      font-size: 18px
+      padding: 8px 40px
+      margin-bottom: 10px
+      border: none
+      background-color: $green
+      border-radius: 50px
+      color: $white
+      align-self: flex-end 
+  &__img
+    width: 55%
+    img
+      width: 100%    
+
