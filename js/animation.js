@@ -226,7 +226,7 @@ if (document.querySelector('.wrapper-start')) {
       gsap.set('.what_new', {opacity: 1})
       let mainTlForTest = gsap.timeline()
         .add(startBannerTl.restart())
-        .to('.header-start', { y: 0, opacity: 1 })
+        .to('.header-start, .footer-start', { y: 0, opacity: 1 })
         .to('.what_new-content', { x: 0, opacity: 1, maxWidth: 'none' }, '<')
         .to('.what_new__img', { x: 0 }, '<')
 

@@ -27,7 +27,7 @@
         <li><a class="header-nav__point" href="about.html">About</a></li>
         <li><a class="header-nav__point" href="blog.html">Blog</a></li>
         <li><a class="header-nav__point" href="contact.html">Contact</a></li>
-        <li><a class="header-nav__button" href="#">Learn More</a></li>
+        <li><a class="header-nav__button popup-open" href="#">Learn More</a></li>
       </ul>
     </div>
 		<div class="header-menu">
@@ -35,13 +35,70 @@
 		</div>
 		<div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">About</a>
-        <a href="#">Learning Center</a>
-        <a href="#">Contact</a>
-        <button>Learn More</button>
+        <a href="about.html">About</a>
+        <a href="blog.html">Learning Center</a>
+        <a href="contact.html">Contact</a>
+        <button class="popup-open">Learn More</button>
     </div>
   </header>
   <!-- /header -->
+  <div class="popup-overlay">
+    <div class="popup">
+      <div class="popup-header">
+        <div class="popup__logo">
+          <img src="img/header/enso_logo.png" alt="enso_logo">
+        </div>
+        <a class="popup__close popup-close">×</a>
+      </div>
+      <div class="popup-container">
+        <div class="popup-content">
+          <h3 class="popup-content__title">Happy to chat</h3>
+          <p class="popup-content__text">Thinking of selling your business?</p>
+        </div>
+        <div class="popup-form">
+          <div class="popup-form-block">
+            <input type="text" placeholder="Enter name">
+            <input type="text" placeholder="Enter email">
+          </div>
+          <div class="popup-form-block">
+            <input type="text" placeholder="Phone number">
+            <input type="text" placeholder="Business name">
+          </div>
+          <label>How did you hear about us?</label>
+          <select name="phone">
+            <option value="1">Phone number</option>
+            <option value="2">Phone number</option>
+            <option value="3">Phone number</option>
+            <option value="4">Phone number</option>
+          </select>
+          <label>Tell us your story!</label>
+          <textarea cols="30" rows="10" placeholder="What shoul we know about your business journey?"></textarea>
+          <div class="popup-form-block">
+            <label>Are you on Amazon FBA seller?</label>
+            <label>12-month revenue:</label>
+          </div>
+          <div class="popup-form-block">
+            <select name="select">
+              <option value="1">Select one...</option>
+              <option value="2">Select one...</option>
+              <option value="3">Select one...</option>
+              <option value="4">Select one...</option>
+            </select>
+            <select name="select">
+              <option value="1">Select one...</option>
+              <option value="2">Select one...</option>
+              <option value="3">Select one...</option>
+              <option value="4">Select one...</option>
+            </select>
+          </div>
+          <label>Please provide your Amazon store URL:</label>
+          <input type="text" placeholder="Website URL">
+          <a class="popup-form__button" href="#">Send Message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /.popup -->
   <section class="what_new section-slide">
     <div class="what_new-background">
       <img src="img/what_new/line-back.png" alt="line-back">
@@ -81,26 +138,41 @@
     <h2 class="brands__title">Find Our <span>Brands</span></h2>
     <div class="brands__main">
     </div>
-		<div class="brands-bot-line"></div>
-			<div class="container">
-				<div class="brands-bot">
-				<div class="brands-bot-text">
-					<h3 class="brands-bot-text__main">Join our Circle</h3>
-					<p class="brands-bot-text__sub">Sign up for Enso stories, articles and events. See what’s next.</p>
-				</div>
-				<div class="brands-bot-links">
-					<a href="#"><img src="img/brands/facebook-icon.svg" alt="facebook-icon"></a>
-					<a href="#"><img src="img/brands/instagram-icon.svg" alt="instagram-icon"></a>
-				</div>
-				
-				<input class="brands-bot__input" type="text" placeholder="Enter email address">
-				<a class="brands-bot__button" href="#">Subscribe</a>
-			</div>
-		</div>
+		<!-- <div class="brands-bot-line"></div>
+    <div class="container">
+      <div class="brands-bot">
+        <div class="brands-bot-text">
+          <h3 class="brands-bot-text__main">Join our Circle</h3>
+          <p class="brands-bot-text__sub">Sign up for Enso stories, articles and events. See what’s next.</p>
+        </div>
+        <div class="brands-bot-links">
+          <a href="#"><img src="img/brands/facebook-icon.svg" alt="facebook-icon"></a>
+          <a href="#"><img src="img/brands/instagram-icon.svg" alt="instagram-icon"></a>
+        </div>
+        
+        <input class="brands-bot__input" type="text" placeholder="Enter email address">
+        <a class="brands-bot__button" href="#">Subscribe</a>
+      </div>
+		</div> -->
   </section>
   <!-- /.brands -->
-	<footer class="footer">
+	<footer class="footer footer-start">
 		<div class="container">
+      <div class="footer-top-line"></div>
+
+      <div class="footer-top">
+        <div class="footer-top-text">
+          <h3 class="footer-top-text__main">Join our Circle</h3>
+          <p class="footer-top-text__sub">Sign up for Enso stories, articles and events. See what’s next.</p>
+        </div>
+        <div class="footer-top-links">
+          <a href="#"><img src="img/brands/facebook-icon.svg" alt="facebook-icon"></a>
+          <a href="#"><img src="img/brands/instagram-icon.svg" alt="instagram-icon"></a>
+        </div>
+        <input class="footer-top__input" type="text" placeholder="Enter email address">
+        <a class="footer-top__button" href="#">Subscribe</a>
+      </div>
+
 			<div class="footer-container">
 				<div class="footer-left">
 					<ul>
@@ -119,7 +191,7 @@
 			</div>
 		</div>
 	</footer>
-
+  <!-- /.footer -->
   <section class="section-nav">
    
     <div class="section-nav-points">

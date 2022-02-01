@@ -26,3 +26,32 @@
       font-size: 25px
       letter-spacing: 0.02em
       color: $white
+
+@media screen and ( max-width: 820px )  
+  .contact-links
+    &-container
+      margin-bottom: 50px 
+      flex-direction: column 
+    &__button
+      padding: 15px 40px
+      margin-bottom: 20px
+      width: 100%
+      img
+        width: 30px
+        margin-right: 20px
+      p
+        font-size: 18px  
+
+@media screen and ( min-width: 2560px )          
+  .contact-links
+    &-container
+      margin-bottom: 200px 
+    &__button
+      padding: 30px 80px
+      border-radius: 200px
+
+      img
+        width: 70px
+        margin-right: 50px
+      p
+        font-size: 60px

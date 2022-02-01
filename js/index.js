@@ -16158,7 +16158,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">Jan 2022</div>
-               <div class="mark-block__text">FUNDING: SEED ROUND $25M Raised</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">FUNDING: SEED ROUND $25M Raised</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16173,7 +16176,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">Dec 2021</div>
-               <div class="mark-block__text">35% GROWTH ACROSS IN OUR ECOSYSTEM PORTFOLIO</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">35% GROWTH ACROSS IN OUR ECOSYSTEM PORTFOLIO</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16193,7 +16199,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">Nov 2021</div>
-               <div class="mark-block__text">7 FBA Businesses Acquired</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">7 FBA Businesses Acquired</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16207,13 +16216,15 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
    </g>
    <g>
      <g id="text4">
-       <rect x="1250.55" y="359.66" fill-rule="evenodd" clip-rule="evenodd" fill="#6EBA74" width="5" height="42"/>
        <g>
          <foreignObject x="1250.55" y="290.66" width="250" height="160">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">Jun 2021</div>
-               <div class="mark-block__text">PIVOTING TO FULL TIME AGGREGATION</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">PIVOTING TO FULL TIME AGGREGATION</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16232,7 +16243,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">Mar 2021</div>
-               <div class="mark-block__text">4 FBA BUSINESSES ACQUIRED</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">4 FBA BUSINESSES ACQUIRED</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16256,7 +16270,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">Jan 2021</div>
-               <div class="mark-block__text">AGGREGATOR: 1ST ACQUISITION</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">AGGREGATOR: 1ST ACQUISITION</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16270,7 +16287,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">Dec 2020</div>
-               <div class="mark-block__text">20 + MANAGEMENT CLIENTS</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">20 + MANAGEMENT CLIENTS</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16294,7 +16314,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">April 2020</div>
-               <div class="mark-block__text">8 MANAGEMENT CLIENTS, +1 NEW BRAND LAUNCHED</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">8 MANAGEMENT CLIENTS, +1 NEW BRAND LAUNCHED</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16316,7 +16339,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
              <div xmlns="http://www.w3.org/1999/xhtml">
                <div class="mark-block">
                  <div class="mark-block__title">Jan 2020</div>
-                 <div class="mark-block__text">MANAGERS: TRANSITION/ GROWTH TO CONSULTING AND MANAGEMENT, 1ST MANAGEMENT CLIENT</div>
+                 <div class="mark-block-bot">
+                  <div class="mark-block__line" ></div>
+                  <div class="mark-block__text">MANAGERS: TRANSITION/ GROWTH TO CONSULTING AND MANAGEMENT, 1ST MANAGEMENT CLIENT</div>
+                 </div>
                </div>
              </div>
            </foreignObject>
@@ -16336,7 +16362,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
            <div xmlns="http://www.w3.org/1999/xhtml">
              <div class="mark-block">
                <div class="mark-block__title">2017- Sellers</div>
-               <div class="mark-block__text">BRANDS BUILT & I LAUNCHED ON AMAZON</div>
+               <div class="mark-block-bot">
+                <div class="mark-block__line" ></div>
+                <div class="mark-block__text">BRANDS BUILT & I LAUNCHED ON AMAZON</div>
+               </div>
              </div>
            </div>
          </foreignObject>
@@ -16355,7 +16384,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Jan 2022</div>
-             <div class="mark-block__text">FUNDING: SEED ROUND $25M Raised</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line" ></div>
+              <div class="mark-block__text">FUNDING: SEED ROUND $25M Raised</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16371,7 +16403,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Dec 2021</div>
-             <div class="mark-block__text">35% GROWTH ACROSS IN OUR ECOSYSTEM PORTFOLIO</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">35% GROWTH ACROSS IN OUR ECOSYSTEM PORTFOLIO</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16387,7 +16422,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Nov 2021</div>
-             <div class="mark-block__text">7 FBA Businesses Acquired</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">7 FBA Businesses Acquired</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16403,7 +16441,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Jun 2021</div>
-             <div class="mark-block__text">PIVOTING TO FULL TIME AGGREGATION</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">PIVOTING TO FULL TIME AGGREGATION</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16419,7 +16460,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Mar 2021</div>
-             <div class="mark-block__text">4 FBA BUSINESSES ACQUIRED</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">4 FBA BUSINESSES ACQUIRED</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16435,7 +16479,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Jan 2021</div>
-             <div class="mark-block__text">AGGREGATOR: 1ST ACQUISITION</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">AGGREGATOR: 1ST ACQUISITION</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16451,7 +16498,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Dec 2020</div>
-             <div class="mark-block__text">20 + MANAGEMENT CLIENTS</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">20 + MANAGEMENT CLIENTS</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16467,7 +16517,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">April 2020</div>
-             <div class="mark-block__text">8 MANAGEMENT CLIENTS, +1 NEW BRAND LAUNCHED</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">8 MANAGEMENT CLIENTS, +1 NEW BRAND LAUNCHED</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16479,11 +16532,14 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
        c2.6,6,4,12.3,3,18.9c-2.5,14.6-13.3,26.2-27.8,29.6c-14.6,3.5-29.7-2.2-38.2-14.3c-5.3-7.3-7.7-15.6-6.3-24.6
        c1-6.7,4-12.7,7.1-18.7c6.6-12.8,14.6-24.8,23-36.5c1.9-2.7,3.9-5.2,5.9-8.1C344.9,459.67,345.2,459.87,345.3,460.17z"/>
      <g>
-       <foreignObject x="391" y="440" width="300" height="160">
+       <foreignObject x="391" y="440" width="300" height="260">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">Jan 2020</div>
-             <div class="mark-block__text">MANAGERS: TRANSITION/ GROWTH TO CONSULTING AND MANAGEMENT, 1ST MANAGEMENT CLIENT</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">MANAGERS: TRANSITION/ GROWTH TO CONSULTING AND MANAGEMENT, 1ST MANAGEMENT CLIENT</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -16499,7 +16555,10 @@ rkJggg==" transform="matrix(0.24 0 0 0.24 418.828 -439.1013)">
          <div xmlns="http://www.w3.org/1999/xhtml">
            <div class="mark-block">
              <div class="mark-block__title">2017- Sellers</div>
-             <div class="mark-block__text">BRANDS BUILT & I LAUNCHED ON AMAZON</div>
+             <div class="mark-block-bot">
+              <div class="mark-block__line"></div>
+              <div class="mark-block__text">BRANDS BUILT & I LAUNCHED ON AMAZON</div>
+             </div>
            </div>
          </div>
        </foreignObject>
@@ -24407,4 +24466,17 @@ function scrollMenuLight(name) {
   }
 }
 
+const markLines = document.querySelectorAll('.mark-block__line')
+const markTexts = document.querySelectorAll('.mark-block__text')
 
+for (let i = 0; i < markLines.length; i++) {
+  markLines[i].style.height = markTexts[i].clientHeight + 'px'
+}
+
+document.querySelector('.popup-open').addEventListener('click', () => {
+  document.querySelector('.popup-overlay').style.display = 'block'
+})
+
+document.querySelector('.popup-close').addEventListener('click', () => {
+  document.querySelector('.popup-overlay').style.display = 'none'
+})

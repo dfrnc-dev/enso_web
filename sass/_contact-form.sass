@@ -41,3 +41,37 @@
     img
       width: 100%    
 
+@media screen and ( max-width: 820px )
+  .contact-form
+    &-container
+      margin-bottom: 50px
+      flex-direction: column-reverse
+    &-block
+      width: 100%
+      &__title
+        align-self: center
+      &__button
+        font-size: 20px
+        padding: 12px 50px
+        align-self: center 
+    &__img
+      width: 100%
+      margin-bottom: 10px  
+
+@media screen and ( min-width: 2560px )  
+  .contact-form
+    &-container
+    &-block
+      width: 50%
+      &__title
+        font-size: 70px
+      &__name, &__email, &__textarea
+        font-size: 50px  
+        padding: 15px 15px
+        margin-bottom: 20px
+      &__button
+        font-size: 40px
+        padding: 20px 70px
+  
+    &__img      
+      width: 48%

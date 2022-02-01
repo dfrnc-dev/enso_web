@@ -29,6 +29,15 @@ h1, h2, h3, h4, h5, h6, p
 
 body
   background-color: $black
+  &::-webkit-scrollbar
+    width: 5px
+    height: 5px
+    height: 100%
+    background-color: none
+  &::-webkit-scrollbar-thumb:vertical
+    height: 5px
+    background-color: darken($green, 40%)
+    border-radius: 5px 
   
   
 .wrapper-start

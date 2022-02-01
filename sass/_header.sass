@@ -8,12 +8,14 @@
   display: flex
   justify-content: space-between
   align-items: center
-  padding: 20px 40px
+  padding: 10px 40px
   z-index: 2
+  &-black
+    background-color: $black
   &-start
     opacity: 0
   &__logo
-    width: 20%
+    width: 15%
     img
       width: 100%
   &-nav
@@ -51,14 +53,14 @@
     padding: 10px 20px
     background-color: $black
     &__logo
-      width: 20%
+      width: 15%
     &-nav 
       display: none  
 
 @media only screen and (max-width: 550px)
   .header
     &__logo
-      width: 40%
+      width: 30%
 
 .sidenav
   height: 100%
