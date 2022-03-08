@@ -6,6 +6,7 @@
   padding-top: 15vh
   z-index: -1
   position: absolute
+  margin-bottom: 50px
   &__text
     font-family: LibreBaskerville
     font-weight: 700
@@ -16,6 +17,72 @@
     z-index: 1
     span
       color: $green
+  &__subtext
+    font-family: ProximaNova
+    font-weight: bold
+    font-size: 25px
+    color: $white
+    text-align: center
+    z-index: 1
+    position: absolute
+    left: 50%
+    top: 22%
+    transform: translateX(-50%)
+    width: 100%
+    span
+      color: $yellow
+
+  &__review
+    position: relative
+    width: 80%
+    font-family: LibreBaskerville
+    font-weight: bold
+    font-size: 28px
+    text-align: center
+    color: $white
+    letter-spacing: 0.075em
+    margin-bottom: 60px
+    background: rgba($yellow, 0.1)
+    border: 1px solid $yellow
+    // border-radius: 50px
+    padding: 40px 60px
+    &_quote1
+      color: $green
+      position: absolute
+      top: -12px
+      left: 0px
+      transform: translateX(-50%)
+      font-size: 130px
+  &-container   
+    position: absolute
+    left: 50%
+    top: 35%
+    transform: translateX(-50%)
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column 
+    width: 80%
+    &__img
+      width: 70%
+      margin: 0 auto
+      margin-bottom: 60px
+      svg
+        width: 100%
+        height: 100%    
+  &__button
+    font-family: ProximaNova
+    font-weight: bold
+    font-size: 16px
+    color: $white
+    background-color: $yellow
+    border-radius: 100px
+    padding: 11px 40px
+    text-shadow: 0px 0px 2px rgba($black, 0.6), 0px 0px 4px rgba($black, 0.6)
+    z-index: 5000
+    &:hover
+      background-color: lighten($yellow, 20%)
+      transition: 0.5s         
   &__img
     height: 100%
     svg
@@ -44,6 +111,7 @@
     padding-left: 20px
     font-family: ProximaNova
     width: calc( 100% - 5px )
+
   &__line
     display: inline-block
     width: 5px
@@ -96,8 +164,30 @@
     align-items: center
     justify-content: center
     flex-direction: column
+    margin: 0 auto 
     &__text
       font-size: 25px
+      margin-bottom: 40px
+    &__subtext
+      font-size: 18px
+      position: relative
+      width: 100%
+      margin-bottom: 20px
+      &2
+        display: none
+    &__review
+      width: 100%
+      padding: 20px 20px
+      font-size: 20px
+      margin-bottom: 30px 
+      &_quote1
+        font-size: 80px
+    &-container  
+      position: relative 
+      padding: 0px 20px
+      width: 100%
+      &__img
+        width: 100%      
     &__img
       display: flex
       align-items: center
@@ -107,7 +197,8 @@
   #timelineSVG
     display: none
   #timelineMobileSVG
-    display: block   
+    display: block 
+    margin-bottom: 60px  
 
 @media screen and ( max-width: 550px ) 
   .timeline
@@ -132,4 +223,9 @@
         display: block
         content: ''
         z-index: 1
+    &__subtext
+      font-size: 60px    
+    &__button
+      font-size: 40px
+      padding: 20px 70px    
           

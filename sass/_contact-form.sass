@@ -20,24 +20,33 @@
     &__name, &__email, &__textarea
       font-family: ProximaNova
       font-weight: normal
-      font-size: 22px
+      font-size: 16px
       padding: 10px 10px
       margin-bottom: 10px
-      border: none
       border-radius: 2px
+      border: 1px solid $white
+      background-color: rgba($white, 0.1)
+      color: rgba(lighten($green, 30%), 0.7)
+      &::-webkit-input-placeholder
+        font-family: ProximaNova-It
+        color: rgba(lighten($green, 30%), 0.7)
     &__button
       font-family: ProximaNova
       font-weight: normal
-      font-size: 18px
-      padding: 8px 40px
+      font-size: 16px
+      padding: 11px 40px
       margin-bottom: 10px
       border: none
       background-color: $green
       border-radius: 50px
       color: $white
       align-self: flex-end 
+      text-shadow: 0px 0px 2px rgba($black, 0.6), 0px 0px 4px rgba($black, 0.6)
+      &:hover
+        background-color: lighten($green, 20%)
+        transition: 0.5s
   &__img
-    width: 55%
+    width: 45%
     img
       width: 100%    
 
@@ -51,8 +60,8 @@
       &__title
         align-self: center
       &__button
-        font-size: 20px
-        padding: 12px 50px
+        font-size: 14px
+        padding: 9px 30px
         align-self: center 
     &__img
       width: 100%

@@ -8,8 +8,8 @@ if (document.querySelector('.wrapper-start')) {
 	const map7An = gsap.timeline({ paused: true });
 
 	function mapAn(num, mapAnim, dur1, scaleNum, markAn = false) {
-		gsap.set(`#map${num}`, { duration: 1, opacity: 0.2 });
-		gsap.set(`#circle${num}`, { opacity: 0.2, transformOrigin: '50% 50%', scale: 0 });
+		gsap.set(`#map${num}`, { duration: 1, opacity: 0.7 });
+		gsap.set(`#circle${num}`, { opacity: 1, transformOrigin: '50% 50%', scale: 0 });
 		gsap.set(`#back-circle${num}`, { transformOrigin: '50% 50%', scale: 0 });
 
 		gsap
@@ -18,12 +18,12 @@ if (document.querySelector('.wrapper-start')) {
 
 		mapAnim.to(`#back-circle${num}`, { duration: 1, transformOrigin: '50% 50%', scale: 30 });
 
-		document.getElementById(`map${num}`).addEventListener('mouseenter', () => {
-			mapAnim.play();
-		});
-		document.getElementById(`map${num}`).addEventListener('mouseleave', () => {
-			mapAnim.reverse();
-		});
+		// document.getElementById(`map${num}`).addEventListener('mouseenter', () => {
+		// 	mapAnim.play();
+		// });
+		// document.getElementById(`map${num}`).addEventListener('mouseleave', () => {
+		// 	mapAnim.reverse();
+		// });
 	}
 
 	mapAn(1, map1An, 2.6, 14);
@@ -34,44 +34,43 @@ if (document.querySelector('.wrapper-start')) {
 	mapAn(6, map6An, 2.7, 16);
 	mapAn(7, map7An, 2.8, 10);
 
-	gsap.set('#mark', { transformOrigin: '50% 50%', scale: 0 });
-	gsap.set('#mark-bot', { transformOrigin: '50% 50%', scale: 0 });
+	// gsap.set('#mark', { transformOrigin: '50% 50%', scale: 0 });
+	// gsap.set('#mark-bot', { transformOrigin: '50% 50%', scale: 0 });
 
-	const markAn = gsap
-		.timeline({ paused: true })
-		.to('#mark', { duration: 1, transformOrigin: '50% 50%', scale: 1 })
-		.to('#mark-bot', { duration: 1, transformOrigin: '50% 50%', scale: 1 }, '<');
+	// const markAn = gsap
+	// 	.timeline({ paused: true })
+	// 	.to('#mark', { duration: 1, transformOrigin: '50% 50%', scale: 1 })
+	// 	.to('#mark-bot', { duration: 1, transformOrigin: '50% 50%', scale: 1 }, '<');
 
-	document.getElementById(`map7`).addEventListener('mouseenter', () => {
-		markAn.play();
-	});
-	document.getElementById(`map7`).addEventListener('mouseleave', () => {
-		markAn.reverse();
-	});
+	// document.getElementById(`map7`).addEventListener('mouseenter', () => {
+	// 	markAn.play();
+	// });
+	// document.getElementById(`map7`).addEventListener('mouseleave', () => {
+	// 	markAn.reverse();
+	// });
 
 	// 00FF8D
 
-	const brandsName = document.getElementById('brands-name');
+	const brandsLink = document.querySelectorAll('.brands__link')
 
-	console.log(brandsName.children);
-
-	for (let i = 0; i < brandsName.children.length; i++) {
-		brandsName.children[i].style.cursor = 'pointer';
-
-		brandsName.children[i].addEventListener('mouseenter', () => {
-			for (let j = 0; j < brandsName.children[i].children.length; j++) {
-				brandsName.children[i].children[j].style.fill = '#00FF8D';
+	for (let i = 0; i < brandsLink.length; i++) {
+		brandsLink[i].children[0].addEventListener('mouseenter', () => {
+			for (let j = 0; j < brandsLink[i].children[0].children.length; j++) {
+				brandsLink[i].children[0].children[j].style.fill = '#00FF8D'
 			}
-		});
+		})
 
-		brandsName.children[i].addEventListener('mouseleave', () => {
-			for (let j = 0; j < brandsName.children[i].children.length; j++) {
-				brandsName.children[i].children[j].style.fill = '#9A9A9A';
+		brandsLink[i].children[0].addEventListener('mouseleave', () => {
+			for (let j = 0; j < brandsLink[i].children[0].children.length; j++) {
+				brandsLink[i].children[0].children[j].style.fill = '#9A9A9A'
 			}
-		});
+		})
 	}
 
-	const anim = () => {
+	let tl
+		
+
+	let anim = () => {
 		gsap.registerPlugin(MorphSVGPlugin);
 		gsap.registerPlugin(MotionPathPlugin);
 
@@ -178,7 +177,8 @@ if (document.querySelector('.wrapper-start')) {
 			.to('#gAll2 .gScale', { duration: 0.2, scale: 0, ease: 'sine.in' }, '>-0.2')
 			.to(animCap('#gAll3', '#gAllpath3i1'), { duration: 2.1, progress: 1, ease: 'none' }, 'qq')
 			.to('#gAll3 .gScale', { duration: 0.2, scale: 0, ease: 'sine.in' }, '>-0.2')
-			.to('#gLogo', { duration: 0.5, scale: 1, rotation: 0, ease: 'back.out(1)' });
+			.to('#gLogo', { duration: 0.5, scale: 1, rotation: 0, ease: 'back.out(1)' })
+			.totalDuration(2)
 
 		let endBannerTl = gsap
 			.timeline({ paused: true })
@@ -193,7 +193,8 @@ if (document.querySelector('.wrapper-start')) {
 
 			.to('#gAll3 .gScale', { duration: 0.2, scale: 1, ease: 'sine.in' }, 'qq1')
 			.to(animCap('#gAll3', '#gAllpath3i2'), { duration: 2.5, progress: 1, ease: 'none' }, 'qq1')
-			.to('#gAll3 .gScale', { duration: 0.2, scale: 0, ease: 'sine.in' }, '>-0.2');
+			.to('#gAll3 .gScale', { duration: 0.2, scale: 0, ease: 'sine.in' }, '>-0.2')
+			.totalDuration(2)
 
 		///////////////////////////////////////////////////////////
 
@@ -210,21 +211,21 @@ if (document.querySelector('.wrapper-start')) {
 			'#timelineSVG #text1, #timelineSVG #text2, #timelineSVG #text3, #timelineSVG #text4, #timelineSVG #text5, #timelineSVG #text6, #timelineSVG #text7, #timelineSVG #text8, #timelineSVG #text9, #timelineSVG #text10',
 			{ opacity: 0 }
 		);
-		gsap.set('.timeline__text', { opacity: 0 });
-		gsap.set('#timelineSVG #mark1, #timelineSVG #text1', { y: -90, x: 20 });
-		gsap.set('#timelineSVG #mark3, #timelineSVG #text3', { y: -90, x: -20 });
-
+		gsap.set('.timeline__text, .timeline__subtext1, .timeline__subtext2, .timeline-container', { opacity: 0 });
+		gsap.set('#timelineSVG #mark6', { y: -20, x: -100 });
+		gsap.set('#timelineSVG #mark7', { y: -20, x: -50 });
 		gsap.set('.header-start', { y: -50, opacity: 0 });
 		gsap.set('.what_new-content', { x: -50, opacity: 0, maxWidth: 0 });
-		gsap.set('.what_new__img', { x: '-50%' });
+		gsap.set('.what_new__img', { x: '-60%' });
+		gsap.set('.section-nav', {opacity: 0})
 
 		const wayAn = gsap
 			.timeline({ paused: true })
 			.to('#timelineSVG #way, #timelineSVG #marks', {
 				duration: 8,
-				y: 1800,
+				y: 1000,
 				transformOrigin: '50% 50%',
-				scale: 1.8,
+				scale: 1.5,
 				ease: 'none',
 				delay: 5,
 			})
@@ -263,61 +264,63 @@ if (document.querySelector('.wrapper-start')) {
 			.to('#timelineSVG #mark6', { duration: 1, fill: '#F8AC16' }, '>+0.7')
 			.to('#timelineSVG #mark7', { duration: 1, fill: '#F8AC16' }, '>+0.7')
 			.to('#timelineSVG #mark8', { duration: 1, fill: '#F8AC16' }, '>+0.7')
-			.to('#timelineSVG #mark9 path', { duration: 1, fill: '#F8AC16' }, '>+0.7')
+			.to('#timelineSVG #mark9', { duration: 1, fill: '#F8AC16' }, '>+0.7')
 			.to('#timelineSVG #mark10', { duration: 1, fill: '#F8AC16' }, '>+0.7');
 
-		const tl = gsap.timeline({
+		tl = gsap.timeline({
 			scrollTrigger: {
 				trigger: '.what_new',
 				start: 'bottom bottom',
-				end: 'bottom+=10000px bottom',
+				end: 'bottom+=5000px bottom',
 				scrub: 1,
 				pin: true,
 			},
 		});
 
+		const tlPoints = gsap.timeline({
+			scrollTrigger: {
+				trigger: '.brands',
+				start: 'bottom bottom',
+				end: 'bottom+=50px bottom',
+				scrub: 1
+			},
+		});
+		
+
 		window.addEventListener('load', () => {
 			gsap.set('.what_new', { opacity: 1 });
+			gsap.set('.header-black', { background: 'transparent' });
 			let mainTlForTest = gsap
 				.timeline()
 				.add(startBannerTl.restart())
+				.set('.wrapper-start', {overflow: 'auto'})
 				.to('.header-start, .footer-start', { y: 0, opacity: 1 })
 				.to('.what_new-content', { x: 0, opacity: 1, maxWidth: 'none' }, '<')
+				.set('.section-nav', { opacity: 1 }, '<')
 				.to('.what_new__img', { x: 0 }, '<');
 
 			setTimeout(() => {
-				document.querySelector('.wrapper-start').style.overflow = 'auto';
+				// document.querySelector('.wrapper-start').style.overflow = 'auto';
 				tl.add(endBannerTl.restart())
-					.to(
-						'.what_new-content, .what_new-background, .what_new__img',
-						{ duration: 1, opacity: 0 },
-						'>-1'
-					)
+					.to('.what_new-content, .what_new-background, .what_new__img', { duration: 1, opacity: 0 },'>-1')
 					.addLabel('Label1')
-					.to('.timeline__text', { duration: 1, opacity: 1 })
-					.to('#timelineSVG #lines-green >*', { duration: 5, strokeDashoffset: 0 }, '<')
-					.to('#timelineSVG #lines-black >*', { duration: 5, strokeDashoffset: 0 }, '<+0.5')
+					.to('.timeline__text, .timeline__subtext1', { duration: 1, opacity: 1 })
+					.set('.what_new-content, .what_new-background, .what_new__img', { display: 'none' })
+					.to('#timelineSVG #lines-green >*', { duration: 5, strokeDashoffset: 0 }, '<-1.2')
+					.to('#timelineSVG #lines-black >*', { duration: 5, strokeDashoffset: 0 }, '<+0.1')
 					.to(wayAn, { duration: 10, progress: 1, ease: 'none' }, '<')
-					.to(marksAn, { duration: 8, progress: 1, ease: 'none' }, '<')
+					.to(marksAn, { duration: 10, progress: 1, ease: 'none' }, '<')
 					.addLabel('Label2', '<+2.6')
-					.to(
-						'#timelineSVG #lines-green >*',
-						{ duration: 2, strokeDashoffset: -5400, ease: 'none' },
-						'>-0.1'
-					)
-					.to(
-						'#timelineSVG #lines-black >*',
-						{ duration: 2, strokeDashoffset: -4500, ease: 'none' },
-						'<'
-					)
+					.to('#timelineSVG #way, #timelineSVG #marks, .timeline__subtext1', {duration: 1,  opacity: 0}, '>-1.5')
 					.to('#timelineSVG #timeline_2_', { duration: 2, strokeDashoffset: 0 }, '>-0.5')
 					.to('#timelineSVG #top-shadow', { duration: 1, opacity: 0 }, '<')
-					.to('#timelineSVG #marks2 >*', { duration: 0.5, opacity: 1, stagger: 0.12 }, '<')
-					// .to('#timelineSVG #lines-green >*', { duration: 1, strokeDashoffset: -4400, ease: 'none' }, '<+1')
-					// .to('#timelineSVG #lines-black >*', { duration: 1, strokeDashoffset: -3500, ease: 'none' },)
-					// .to('#timelineSVG #timeline_2_', { duration: 1, strokeDashoffset: -600, ease: 'none' }, '<+0.7')
+					.to('.timeline__subtext2, .timeline-container', { duration: 1, opacity: 1 }, '<+0.5')
+					.set('.header-black', { background: '#000000' })
 					.to('#timelineSVG #mark10', { duration: 0.3, fill: '#F8AC16' });
 		
+				tlPoints
+					.to('.section-nav__point', { duration: 1, opacity: 0 })			
+
 				document.getElementById('timeline-link').addEventListener('click', () => {
 					gsap.to(window, { duration: 0.5, ease: 'none', scrollTo: ((10000 * tl.labels.Label2) / tl.duration())});
 				})
@@ -327,14 +330,14 @@ if (document.querySelector('.wrapper-start')) {
 				})
 
 				window.addEventListener('scroll', () => {
-					if (window.scrollY > 0 && window.scrollY < ((10000 * tl.labels.Label1) / tl.duration())) {
+					if (window.scrollY > 0 && window.scrollY < ((5000 * tl.labels.Label1) / tl.duration())) {
 						document.querySelector(`#what_new-link`).style.background = '#00FF8D'
 					}
 					else {
 						document.querySelector(`#what_new-link`).style.background = 'transparent'
 					}
 
-					if (window.scrollY > ((10000 * tl.labels.Label1) / tl.duration()) && window.scrollY < 10000) {
+					if (window.scrollY > ((5000 * tl.labels.Label1) / tl.duration()) && window.scrollY < 5400) {
 						document.querySelector(`#timeline-link`).style.background = '#00FF8D'
 					}
 					else {
@@ -346,13 +349,16 @@ if (document.querySelector('.wrapper-start')) {
 
 			}, mainTlForTest.duration() * 1000);
 
+		
 			
 		});
 
 		// let mainTlForTest = gsap.timeline()
 		//   .add(startBannerTl.restart())
 		//   .add(endBannerTl.restart(), ">+2")
+		
 	};
+
 
 	window.addEventListener('resize', () => {
 		if (window.innerWidth > 820) {
@@ -365,6 +371,10 @@ if (document.querySelector('.wrapper-start')) {
 		anim();
 		console.log(1);
 	}
+	
+
+	
+	
 } else {
 	gsap.set('.header-start, .footer-start', { y: 0, opacity: 1 });
 	gsap.set('.section-nav-points', { opacity: 0, pointerEvents: 'none' });
@@ -378,15 +388,14 @@ function navLink(name) {
 
 navLink('map')
 navLink('brands')
+navLink('slider')
 
 function scrollNavLight(name) {
-	console.log(name);
 	const elTopPosition = document.getElementById(name).getBoundingClientRect().top + window.scrollY
 	const elBottomPosition = document.getElementById(name).getBoundingClientRect().top + window.scrollY + document.getElementById(name).getBoundingClientRect().height
 
-	if (window.scrollY > elTopPosition - 300 && window.scrollY < elBottomPosition - 300) {
+	if (window.scrollY > elTopPosition - 420 && window.scrollY < elBottomPosition - 300) {
 		document.querySelector(`#${name}-link`).style.background = '#00FF8D'
-		console.log(name);
 	}
 	else {
 		document.querySelector(`#${name}-link`).style.background = 'transparent'
@@ -396,4 +405,26 @@ function scrollNavLight(name) {
 window.addEventListener('scroll', () => {
 	scrollNavLight('map')
 	scrollNavLight('brands')
+	scrollNavLight('slider')
 }) 
+
+///////
+
+gsap.set('#traks >*:nth-child(1)', { duration: 1, opacity: 1 })
+gsap.set('#traks >*:nth-child(2)', { duration: 1, opacity: 0 })
+gsap.set('#traks >*:nth-child(3)', { duration: 1, opacity: 0 })
+gsap.set('#traks >*:nth-child(4)', { duration: 1, opacity: 0 })
+gsap.set('#traks >*:nth-child(5)', { duration: 1, opacity: 0 })
+
+gsap.timeline({ repeat: -1 })
+	.to('#traks >*:nth-child(1)', { duration: 1, opacity: 0 })
+	.to('#traks >*:nth-child(2)', { duration: 1, opacity: 1 }, '<')
+	.to('#traks >*:nth-child(2)', { duration: 1, opacity: 0 })
+	.to('#traks >*:nth-child(3)', { duration: 1, opacity: 1 }, '<')
+	.to('#traks >*:nth-child(3)', { duration: 1, opacity: 0 })
+	.to('#traks >*:nth-child(4)', { duration: 1, opacity: 1 }, '<')
+	.to('#traks >*:nth-child(4)', { duration: 1, opacity: 0 })
+	.to('#traks >*:nth-child(5)', { duration: 1, opacity: 1 }, '<')
+	.to('#traks >*:nth-child(5)', { duration: 1, opacity: 0 })
+	.to('#traks >*:nth-child(1)', { duration: 1, opacity: 1 }, '<')
+	.totalDuration(4)

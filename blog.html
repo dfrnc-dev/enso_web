@@ -18,12 +18,13 @@
 </head>
 <body>
 	<div class="wrapper">
-		 <header class="header">
+		 <header class="header header-black">
     <div class="header__logo">
       <a href="index.html"><img src="img/header/enso_logo.png" alt="enso_logo"></a>
     </div>
     <div class="header-nav">
       <ul>
+        <li><a class="header-nav__point" href="index.html">Home</a></li>
         <li><a class="header-nav__point" href="about.html">About</a></li>
         <li><a class="header-nav__point" href="blog.html">Blog</a></li>
         <li><a class="header-nav__point" href="contact.html">Contact</a></li>
@@ -35,8 +36,9 @@
 		</div>
 		<div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="blog.html">Learning Center</a>
+        <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
         <button class="popup-open">Learn More</button>
     </div>
@@ -46,19 +48,18 @@
     <div class="popup">
       <div class="popup-header">
         <div class="popup__logo">
-          <img src="img/header/enso_logo.png" alt="enso_logo">
+          
         </div>
         <a class="popup__close popup-close">×</a>
       </div>
       <div class="popup-container">
         <div class="popup-content">
-          <h3 class="popup-content__title">Happy to chat</h3>
-          <p class="popup-content__text">Thinking of selling your business?</p>
+          <h3 class="popup-content__text">Thinking of selling your business? <span>Let’s Connect</span></h3>
         </div>
         <div class="popup-form">
           <div class="popup-form-block">
-            <input type="text" placeholder="Enter name">
-            <input type="text" placeholder="Enter email">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
           </div>
           <div class="popup-form-block">
             <input type="text" placeholder="Phone number">
@@ -66,10 +67,11 @@
           </div>
           <label>How did you hear about us?</label>
           <select name="phone">
-            <option value="1">Phone number</option>
-            <option value="2">Phone number</option>
-            <option value="3">Phone number</option>
-            <option value="4">Phone number</option>
+            <option value="1">Select one...</option>
+            <option value="2">Another seller</option>
+            <option value="3">Social media</option>
+            <option value="4">Youtube</option>
+            <option value="5">Other</option>
           </select>
           <label>Tell us your story!</label>
           <textarea cols="30" rows="10" placeholder="What shoul we know about your business journey?"></textarea>
@@ -80,15 +82,16 @@
           <div class="popup-form-block">
             <select name="select">
               <option value="1">Select one...</option>
-              <option value="2">Select one...</option>
-              <option value="3">Select one...</option>
-              <option value="4">Select one...</option>
+              <option value="2">Yes, l am!</option>
+              <option value="3">Nope</option>
             </select>
             <select name="select">
               <option value="1">Select one...</option>
-              <option value="2">Select one...</option>
-              <option value="3">Select one...</option>
-              <option value="4">Select one...</option>
+              <option value="2">Less than $500k</option>
+              <option value="3">$500k - $1M</option>
+							<option value="4">$1M - $5M</option>
+							<option value="5">$5M - $10M</option>
+							<option value="6">$10M+</option>
             </select>
           </div>
           <label>Please provide your Amazon store URL:</label>
@@ -151,8 +154,10 @@
           <a href="#"><img src="img/brands/facebook-icon.svg" alt="facebook-icon"></a>
           <a href="#"><img src="img/brands/instagram-icon.svg" alt="instagram-icon"></a>
         </div>
-        <input class="footer-top__input" type="text" placeholder="Enter email address">
-        <a class="footer-top__button" href="#">Subscribe</a>
+        <div class="footer-top-right">
+          <input class="footer-top__input" type="text" placeholder="Enter email address">
+          <a class="footer-top__button" href="#">Subscribe</a>
+        </div>
       </div>
 
 			<div class="footer-container">
@@ -161,8 +166,8 @@
 						<li><a href="#">About Us</a></li>
 						<li><a href="#">Blog</a></li>
 						<li><a href="#">Contact</a></li>
-						<li><a href="#">Term & Conditions</a></li>
 						<li><a href="#">Privacy Policy</a></li>
+            <li class="footer-li-center" ><a class="footer-a-center" href="#">Term & Conditions</a></li>
 					</ul>
 				</div>
 				<div class="footer-right">

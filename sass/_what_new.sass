@@ -10,6 +10,7 @@
   z-index: 0
   position: relative
   opacity: 0
+  margin-bottom: 100px
   &-background
     position: absolute
     left: 0
@@ -45,7 +46,7 @@
       
     svg
       height: 100vh
-      width: 100%  
+      width: 125%  
       z-index: 0
     img
       width: 100%  
@@ -57,24 +58,25 @@
     font-size: 55px
     color: $green
     letter-spacing: 0.075em
-    margin-bottom: 25px
+    margin-bottom: 20px
   &__text
     font-family: ProximaNova
     font-style: normal
-    font-weight: 600
-    font-size: 31px
+    font-weight: normal
+    font-size: 28px
     color: $white
-    margin-bottom: 60px
+    margin-bottom: 30px
     line-height: 144%
     letter-spacing: 0.02em
   &__button
     font-family: ProximaNova
     font-weight: bold
-    font-size: 19px
+    font-size: 16px
     color: $white
     background-color: $yellow
     border-radius: 100px
-    padding: 11px 60px
+    padding: 11px 40px
+    text-shadow: 0px 0px 2px rgba($black, 0.6), 0px 0px 4px rgba($black, 0.6)
     &:hover
       background-color: lighten($yellow, 20%)
       transition: 0.5s
@@ -102,8 +104,8 @@
       margin-bottom: 30px
       text-align: center
     &__button
-      font-size: 24px
-      padding: 10px 30px   
+      font-size: 14px
+      padding: 9px 30px   
       text-align: center
     &__img
       width: 40%
@@ -122,6 +124,7 @@
     opacity: 1
     position: relative
     padding: 120px 20px 100px
+    margin-bottom: 0px
 
 @media screen and ( min-width: 2560px ) 
   .what_new
@@ -130,5 +133,6 @@
     &__text
       font-size: 71px
     &__button
-      font-size: 39px
+      font-size: 40px
+      padding: 20px 70px
     
