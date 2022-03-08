@@ -360,19 +360,30 @@ if (document.querySelector('.wrapper-start')) {
 	};
 
 
-	window.addEventListener('resize', () => {
-		if (window.innerWidth > 820) {
-			anim();
-			console.log(1);
+	let isAnimRun = true
+
+	function animRun() {
+		if (window.innerWidth < 820 && isAnimRun) {
+			anim = null
+			isAnimRun = false
+			location.reload()
 		}
+		else if (window.innerWidth > 820 && !isAnimRun) {
+			isAnimRun = true
+			location.reload()
+		}
+	}
+
+	window.addEventListener('resize', () => {
+		animRun()
 	});
 
-	if (window.innerWidth > 820) {
-		anim();
-		console.log(1);
+	if (window.innerWidth < 820 && isAnimRun) {
+		anim = null
+		isAnimRun = false
 	}
-	
 
+	anim()
 	
 	
 } else {
